@@ -24,6 +24,7 @@
         android:id="@+id/txtHiWorld"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:alpha="0"
         android:background="#B33131"
         android:text="Hi World!"
         android:textSize="30sp"
@@ -32,7 +33,33 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.203"
-        android:alpha="0"/>
+        app:layout_constraintVertical_bias="0.203" />
+
+    <TextView
+        android:id="@+id/txtAndroid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#3D4FAC"
+        android:text="Professional Android Development"
+        android:textColor="#FF0098"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHelloWorld"
+        app:layout_constraintVertical_bias="0.162" />
+
+    <Button
+        android:id="@+id/btnAnimate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAndroid"
+        app:layout_constraintVertical_bias="0.253" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
